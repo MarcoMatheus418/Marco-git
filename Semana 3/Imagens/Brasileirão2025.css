@@ -1,0 +1,18 @@
+body{
+			
+		table{
+			border-collapse: collapse;
+			margin: 0 auto;
+			width: 55%;
+        }
+    }
+
+			
+		.vazia {
+			background-color: white;
+		}
+		table td img {
+			width: 30px;
+			height: 30px;
+		}
+	
