@@ -1,0 +1,152 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: Segoe UI,sans-serif;
+	color: #1a5036;
+	display: grid;
+	grid-template-areas: 'horario'
+						 'logo'
+						 'menu'
+						 'banner'
+						 'conteudo'
+						 'rodape';
+	grid-template-rows: 25px 78px 30px auto auto 36px;
+	grid-template-columns: 100%;
+	width: 100%;
+}
+
+.horario{
+	grid-area: horario;
+	background-color: #ccc;
+}
+
+.horario p{
+	padding-left: 72px;
+	line-height: 25px;
+}
+
+.logo{
+	grid-area: logo;
+	background-color: white;
+}
+
+.logo img{
+	height: 75px;
+	padding-left: 72px;
+}
+
+.menu{
+	grid-area: menu;
+	background-color: #008454;
+}
+
+.menu ul{
+	list-style: none;
+	width: 100%;
+	display: flex;
+}
+
+.menu ul li{
+	flex: 1;
+	text-align: center;
+	line-height: 30px;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	display: block;
+}	
+
+.menu ul li a:hover{
+	background-color: #1b1b1b;
+}
+
+.banner{
+	grid-area: banner;
+}
+.banner img{
+	width: 100%;
+	height: auto;
+}
+
+.conteudo {
+	grid-area: conteudo;
+	background-image: url('../imagens/fundo.png');
+	display: grid;
+	grid-template-areas: 'revista cartao cartao'
+						 'revista trabalhe atendimento';
+	grid-template-rows: auto auto;
+	grid-template-columns: 2fr 1fr 1fr;
+	padding: 40px;
+	gap: 10px;
+}
+
+.rodape{
+	grid-area: rodape;
+	background-color: black;
+}
+
+.rodape p{
+	color: white;
+	text-align: center;
+	line-height: 36px;
+}
+
+.revista{
+	grid-area: revista;
+	background-color: white;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	text-align: center;
+}
+
+.revista img{
+	width: 50%;
+}
+.revista h3{
+	height: 40px;
+}
+
+.cartao{
+	grid-area: cartao;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.cartao img{
+	width: 50%;
+}
+
+.cartao h3{
+	height: 40px;
+}
+
+.trabalhe{
+	grid-area: trabalhe;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	padding: 30px;
+}
+
+.atendimento{
+	grid-area: atendimento;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	padding: 30px;
+}
