@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:rgb(232,230,218);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width:60%;
+    margin:auto;
+    text-align:center;
+}
+
+#banner{
+
+    width:80%;
+    height:100px;
+
+    margin:20px auto;
+
+    background-image:url("fundo-banner.avif");
+    background-position:left;
+    background-size:cover;
+
+    border:3px solid #f0c545;
+    border-radius:20px;
+
+    font-family:Impact;
+    font-size:30px;
+    color:white;
+    line-height:100px;
+
+}
+
+#banner h1{
+    font-size:30px;
+}
+
+#menu{
+
+    position:sticky;
+    top:0;
+
+    background:rgb(232,230,218);
+    padding:10px;
+
+}
+
+#menu ul{
+    list-style:none;
+}
+
+#menu li{
+    display:inline-block;
+}
+
+#menu a{
+
+    display:block;
+
+    width:100px;
+
+    padding:15px;
+
+    background:tomato;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+}
+
+#menu a:hover{
+
+    background:#d84d34;
+
+}
+
+.produto{
+
+    width:600px;
+
+    margin:20px auto;
+
+    background:white;
+
+    border:1px solid gray;
+
+    border-radius:10px;
+
+    padding-bottom:20px;
+
+}
+
+.imagem{
+
+    position:relative;
+
+}
+
+.imagem img{
+
+    width:100%;
+
+    border-radius:10px 10px 0 0;
+
+}
+
+.preco{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    background:tomato;
+
+    color:white;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+
+}
+
+.produto h2{
+
+    margin-top:20px;
+
+}
+
+.produto p{
+
+    margin:20px;
+
+}
+
+.produto a{
+
+    display:inline-block;
+
+    background:tomato;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+}
+
+.produto a:hover{
+
+    background:#d84d34;
+
+}
+
+#whatsapp{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    background:lightgreen;
+
+    padding:10px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+}
+
+#whatsapp a{
+
+    text-decoration:none;
+
+    color:black;
+
+}
+
+#whatsapp img{
+
+    width:60px;
+
+    height:60px;
+
+}
